@@ -5,10 +5,8 @@
     <rosparam file="$(find pioneer_2dnav)/local_costmap_params.yaml" command="load" />
     <rosparam file="$(find pioneer_2dnav)/global_costmap_params.yaml" command="load" />
     <rosparam file="$(find pioneer_2dnav)/base_local_planner_params.yaml" command="load" />
-    <rosparam file="$(find pioneer_2dnav)/blocking_layer_params.yaml" command="load" />
-    <!-- START: Use with multi-pioneer simulation -->
+    <rosparam file="$(find link_blocking_layer)/blocking_layer_params.yaml" command="load" />
     <remap from="map" to="/map" />
-    <!-- END: Use with multi-pioneer simulation -->
     
   	<!-- START: Use with estop -->
 <!--	  <remap from="cmd_vel" to="cmd_vel_estop"/>-->
