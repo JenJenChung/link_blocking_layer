@@ -29,7 +29,7 @@ namespace link_blocking_namespace
 		dsrv_->setCallback(cb);
 
 		// Setup callback for recieving wall requests
-		wall_sub_= nh.subscribe("/editWalls", 1000, &BlockingLayer::wallCallback, this);
+		wall_sub_= nh.subscribe("editWalls", 1000, &BlockingLayer::wallCallback, this);
 	}
 
 	void BlockingLayer::matchSize()
