@@ -257,7 +257,7 @@ namespace link_blocking_namespace
 					current_blocks[i].second.second == w.second.second)
 			{
 				ROS_INFO("Point already in list. Not adding");
-				return;
+//				return; // COMMENTED OUT: AVOID MISSING WALLS DUE TO DROPPED MESSAGES, MAY RESULT IN REDUNDANCIES
 			}
 		}
 		to_add.push_back(w);
