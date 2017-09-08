@@ -8,6 +8,7 @@ find_package(catkin REQUIRED COMPONENTS
   costmap_2d
   dynamic_reconfigure
   roscpp
+  agent_msgs
 )
 
 catkin_package(
